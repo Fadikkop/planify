@@ -43,6 +43,7 @@ public class Services.CalDAV.Core : GLib.Object {
 
 		providers_map.set (CalDAVType.NEXTCLOUD.to_string (), new Services.CalDAV.Providers.Nextcloud ());
 		providers_map.set (CalDAVType.RADICALE.to_string (), new Services.CalDAV.Providers.Radicale ());
+		providers_map.set (CalDAVType.GENERIC.to_string (), new Services.CalDAV.Providers.GenericProvider ());
 	}
 
 	public async HttpResponse login (CalDAVType caldav_type, string server_url, string username, string password, GLib.Cancellable cancellable) {

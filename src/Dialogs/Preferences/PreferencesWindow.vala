@@ -1342,7 +1342,7 @@ public class Dialogs.Preferences.PreferencesWindow : Adw.PreferencesDialog {
 
 		var providers_model = new Gtk.StringList (null);
 		providers_model.append (_("Nextcloud"));
-		//  providers_model.append (_("Radicale"));
+		providers_model.append (_("Generic CalDAV"));
 		
 		var providers_row = new Adw.ComboRow ();
 		providers_row.title = _("Provider");
